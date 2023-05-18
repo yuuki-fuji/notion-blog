@@ -53,7 +53,7 @@ const CONFIG = {
   utterances: {
     enable: false,
     config: {
-      repo: "morethanmin/morethan-log",
+      repo: "yuuki-fuji/notionblog",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
