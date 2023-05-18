@@ -18,7 +18,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "Notion-Blog",
+    title: "criceto-web",
     description: "welcome!",
     theme: "auto", // ['light', 'dark', 'auto']
   },
