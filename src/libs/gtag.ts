@@ -1,13 +1,16 @@
 import { CONFIG } from "site.config"
-export const GA_TRACKING_ID = CONFIG.googleAnalytics.config.measurementId
+// export const GA_TRACKING_ID = CONFIG.googleAnalytics.config.measurementId
+export const GTM_CONTAINER_ID = CONFIG.googleTagManager.config.containerId;
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+// https://developers.google.com/gtagjs/reference/api-reference#event
 export const pageview = (url: any) => {
-  if (typeof window !== "object") return
-  window.gtag("config", GA_TRACKING_ID, {
+  if (typeof window !== "object") return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "page_view",
     page_path: url,
-  })
-}
+  });
+};
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({

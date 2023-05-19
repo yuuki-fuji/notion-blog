@@ -40,10 +40,10 @@ const CONFIG = {
   },
 
   // plugin configuration (optional)
-  googleAnalytics: {
+  googleTagManager: {
     enable: true,
     config: {
-      measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
+      containerId: process.env.NEXT_PUBLIC_GOOGLE_CONTAINER_ID || "",
     },
   },
   googleSearchConsole: {
