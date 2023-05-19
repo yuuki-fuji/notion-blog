@@ -5,7 +5,7 @@ const Scripts: React.FC = () => (
   <>
     {CONFIG?.googleTagManager?.enable === true && (
       <>
-        <Script strategy="afterInteractive">
+        <Script strategy="afterInteractive" id="ga-script">
           {`
             (
               function(w,d,s,l,i){

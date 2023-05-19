@@ -2,6 +2,12 @@ import { CONFIG } from "site.config"
 // export const GA_TRACKING_ID = CONFIG.googleAnalytics.config.measurementId
 export const GTM_CONTAINER_ID = CONFIG.googleTagManager.config.containerId;
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 // https://developers.google.com/gtagjs/reference/api-reference#event
 export const pageview = (url: any) => {
   if (typeof window !== "object") return;
