@@ -47,7 +47,7 @@ const CONFIG = {
     },
   },
   googleSearchConsole: {
-    enable: true,
+    enable: true, 
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
