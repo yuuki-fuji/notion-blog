@@ -1,7 +1,7 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "yu-ki",
+    name: "ハムデジ",
     image: "/artist.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "エンジニア",
     bio: "宜しくお願い致します。",
