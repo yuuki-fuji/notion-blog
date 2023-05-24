@@ -1,5 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
+import { BsLine } from "react-icons/bs";
 import {
   AiOutlineInstagram,
   AiOutlineGithub,
@@ -14,6 +15,17 @@ const ContactCard: React.FC = () => {
     <>
       <div className="p-1 mb-3 dark:text-white">💬 Contact</div>
       <ul className="rounded-2xl bg-white dark:bg-zinc-700 p-1 flex flex-col">
+        {CONFIG.profile.line && (
+          <a
+            href={`https://lin.ee/${CONFIG.profile.line}`}
+            rel="noreferrer"
+            target="_blank"
+            className="p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white "
+          >
+            <BsLine className="text-2xl" />
+            <div className="text-sm">公式Line</div>
+          </a>
+        )}
         {CONFIG.profile.github && (
           <a
             href={`https://github.com/${CONFIG.profile.github}`}

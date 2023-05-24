@@ -7,6 +7,7 @@ const CONFIG = {
     bio: "宜しくお願い致します。",
     email: "",
     linkedin: "",
+    line: "sISEw9e",
     github: "yuuki-fuji",
     twitter: "72NhGhtTT1GglWB",
     instagram: "yuuki767767",
